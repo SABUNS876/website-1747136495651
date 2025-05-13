@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Payment Options</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7fa;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+  .payment-container {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    max-width: 360px;
+    width: 100%;
+    padding: 30px 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 8px;
+    color: #282828;
+  }
+  p.subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-top: 0;
+  }
+  .buttons-group {
+    display: flex;
+    justify-content: space-around;
+    gap: 12px;
+  }
+  button.payment-btn {
+    flex: 1;
+    background: linear-gradient(135deg, #1e88e5, #1565c0);
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 14px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 12px rgb(30 136 229 / 0.5);
+  }
+  button.payment-btn:hover {
+    background: linear-gradient(135deg, #1565c0, #0d3c72);
+    box-shadow: 0 6px 16px rgb(21 101 192 / 0.7);
+  }
+  button.payment-btn.dana {
+    background: linear-gradient(135deg, #fca311, #e07b00);
+    box-shadow: 0 4px 12px rgb(252 163 17 / 0.5);
+  }
+  button.payment-btn.dana:hover {
+    background: linear-gradient(135deg, #e07b00, #b05e00);
+    box-shadow: 0 6px 16px rgb(224 123 0 / 0.7);
+  }
+  button.payment-btn.shopee {
+    background: linear-gradient(135deg, #ff6700, #bf3f00);
+    box-shadow: 0 4px 12px rgb(255 103 0 / 0.5);
+  }
+  button.payment-btn.shopee:hover {
+    background: linear-gradient(135deg, #bf3f00, #801f00);
+    box-shadow: 0 6px 16px rgb(191 63 0 / 0.7);
+  }
+
+  @media (max-width: 400px) {
+    .payment-container {
+      padding: 20px 16px 30px 16px;
+    }
+    button.payment-btn {
+      padding: 12px 0;
+      font-size: 13px;
+      border-radius: 8px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="payment-container" role="main">
+    <h1>Pilih Metode Pembayaran</h1>
+    <p class="subtitle">Bayar dengan mudah menggunakan aplikasi pilihan Anda</p>
+    <div class="buttons-group" role="group" aria-label="Metode pembayaran">
+      <button type="button" class="payment-btn ovo" aria-label="Bayar dengan OVO">OVO</button>
+      <button type="button" class="payment-btn" aria-label="Bayar dengan GoPay">GoPay</button>
+      <button type="button" class="payment-btn dana" aria-label="Bayar dengan Dana">Dana</button>
+    </div>
+    <button type="button" class="payment-btn shopee" aria-label="Bayar dengan ShopeePay" style="margin-top: 24px;">ShopeePay</button>
+  </div>
+</body>
+</html>
+
+```
